@@ -1,0 +1,67 @@
+/* Основные стили для мобильных устройств */
+@media (max-width: 768px) {
+  .wrapper__navbar {
+    padding-left: 20px; /* Уменьшено для мобильных */
+    padding-right: 20px; /* Уменьшено для мобильных */
+  }
+
+  .wrapper__list {
+    flex-direction: column; /* Вертикальное расположение карточек */
+    align-items: center; /* Центрирование карточек */
+  }
+
+  .wrapper__list-card {
+    width: 90%; /* Ширина карточки на мобильном */
+    margin-bottom: 20px; /* Уменьшенное расстояние между карточками */
+  }
+
+  .wrapper__list-image {
+    width: 100%; /* Адаптация изображения к ширине карточки */
+    height: auto; /* Сохранение пропорций изображения */
+  }
+
+  .wrapper__list-title {
+    font-size: 1.5em; /* Увеличение размера заголовка */
+  }
+
+  .wrapper__list-text {
+    font-size: 1.2em; /* Увеличение размера текста */
+  }
+
+  .wrapper__list-btn {
+    padding: 10px; /* Увеличение кнопки для удобства на мобильном */
+    font-size: 1em; /* Увеличение шрифта кнопки */
+  }
+}
+
+/* Дополнительные стили для очень маленьких экранов (например, телефонов) */
+@media (max-width: 480px) {
+  .wrapper__navbar {
+    padding-left: 10px; /* Минимальные отступы */
+    padding-right: 10px; 
+  }
+
+  .wrapper__list-card {
+    width: 100%; /* Полная ширина карточки на маленьких экранах */
+    margin-bottom: 15px; /* Уменьшенное расстояние между карточками */
+  }
+
+  .wrapper__list-title {
+    font-size: 1.2em; /* Уменьшение размера заголовка для маленьких экранов */
+  }
+
+  .wrapper__list-text {
+    font-size: 1em; /* Уменьшение размера текста для маленьких экранов */
+  }
+}
+
+/* Печать */
+@media print {
+  .print {
+    display: flex;
+  }
+
+  .wrapper {
+    display: none;
+  }
+}
